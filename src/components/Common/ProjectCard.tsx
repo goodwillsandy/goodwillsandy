@@ -1,16 +1,34 @@
 import React from 'react'
+import Image from 'next/image';
 
-function WorkCard() {
+interface Props {
+  image:any;
+}
+
+function WorkCard(props: Props) {
   return (
-    <div>
-      <figure className='mb-16'>
-        <img className='w-full' src="https://via.placeholder.com/300x520.png" alt="Blog card image" />
-      </figure>
-      <div>
-        <h2 className='mb-8 text-large'>Project Name</h2>
-        <p className='text-base'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quis, ullam beatae consectetur voluptatem tempore aut tenetur aliquam? Facere assumenda autem laboriosam ab explicabo nulla, eius impedit sapiente a eos.</p>
+    <>
+      <style jsx>
+        {`
+        
+        `}
+      </style>
+      <div className='px-16'>
+        <figure className=''>
+          <Image
+            className='w-full'
+            src={props.image}
+            alt="project image"
+            layout="responsive"
+            objectFit="contain"
+          />
+        </figure>
+        <div>
+          <h2 className='mb-8 text-large'>Project Name</h2>
+          <p className='text-base'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here.</p>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

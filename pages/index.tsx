@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       {/* Main sections */}
       <main>
         <Hero />
-        <RecentBlog />
         <RecentWork />
+        <RecentBlog />
       </main>
       {/* Footer sections */}
       <Footer />

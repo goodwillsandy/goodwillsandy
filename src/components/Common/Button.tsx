@@ -15,7 +15,7 @@ function Button(props: Props): JSX.Element {
     <>
       <style jsx>{`
           .btn-primary {
-            @apply bg-primary text-secondary rounded;
+            @apply bg-primary text-lightPrimary rounded;
           }
           .btn-secondary {
             @apply text-primary border-solid border-2 border-primary rounded w-full;

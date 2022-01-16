@@ -9,9 +9,12 @@ function RecentBlog() {
       ul li {
         @apply list-none pb-32;
       }
+      ul li:last-child {
+        @apply list-none p-0;
+      }
       h1:after {
         content: "";
-        background: black;
+        @apply bg-secondary;
         position: absolute;
         left: 3px;
         height: 8px;
@@ -19,7 +22,7 @@ function RecentBlog() {
         top: -8px;
       }
     `}</style>
-    <section className='py-32 px-16'>
+    <section className='py-32 px-16 text-secondary'>
       <div className='relative'>
         <h1 className='text-veryLarge mb-8'>Recent Blogs</h1>
       </div>
