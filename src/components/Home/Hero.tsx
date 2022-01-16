@@ -35,7 +35,8 @@ function Hero() {
       <Image 
         className='hero-image image-cover' 
         src={HeroImage}
-        alt="Hero Section Image" 
+        alt="Hero Section Image"
+        layout='responsive'
       />
     </section>
     </>
