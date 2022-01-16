@@ -6,16 +6,16 @@ module.exports = {
   theme: {
     extend: {},
     spacing: {
-      0: "0px",
-      4: "4px",
-      8: "8px",
-      16: "16px",
-      20: "20px",
-      24: "24px",
-      32: "32px",
-      48: "48px",
-      56: "56px",
-      64: "64px",
+      0: "0rem",
+      4: "0.25rem",
+      8: "0.5rem",
+      16: "1rem",
+      20: "1.25rem",
+      24: "1.5rem",
+      32: "2rem",
+      48: "3rem",
+      56: "3.5rem",
+      64: "4rem",
     },
 
     fontSize: {
