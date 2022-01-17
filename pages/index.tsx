@@ -8,18 +8,15 @@ import RecentWork from '../src/components/Home/RecentProjects';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      {/* Navigation section */}
-      <Header />
-      {/* Main sections */}
-      <main>
-        <Hero />
-        <RecentWork />
-        <RecentBlog />
-      </main>
-      {/* Footer sections */}
-      <Footer />
-    </div>
+    <>
+      <div className='mx-auto'>
+        <main>
+          <Hero />
+          <RecentWork />
+          <RecentBlog />
+        </main>
+      </div>
+    </>
   )
 }
 
