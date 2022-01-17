@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from 'next/image';
-import Button from '../Common/Button';
 import TickertapeLogo from "../../../public/images/tt_logo.png";
 import SmallcaseLogo from "../../../public/images/smallcase_logo.png";
 import UTIMFLogo from "../../../public/images/utimf_logo.png";
@@ -14,30 +14,20 @@ function Hero() {
         .organisation_logos li {
           @apply mr-16;
         }
-        .hero-image {
-          display: block;
-        }
       `}
     </style>
-    <section className='pt-64 text-secondary'>
-      <div className='pb-64 px-16'>
-        <h1 className='text-veryLarge font-display'>
-        👋 Hi! I am Sandeep, a freelance Web Developer and mediocre UI Designer based in Bangalore. I help startups & organisations develop  and grow their product. 
+    <section className='py-80 md:flex md:justify-between md:py-[112px] md:px-64 md:mx-auto'>
+      <div className='pb-64 px-16 md:p-0 md:w-3/4'>
+        <h1 className='text-l font-display md:text-xl'>
+        👋 Hi! I am Sandeep Kumar, a freelance Web Developer and mediocre UI Designer based in Bangalore. I help startups & organisations develop  and grow their product. 
         </h1>
         <p className='mt-32 mb-8'>Organisations i have worked with:</p>
         <ul className='organisation_logos flex'>
-          <li><Image src={TickertapeLogo} alt="tickertape" /></li>
-          <li><Image src={SmallcaseLogo} alt="smallcase" /></li>
-          <li><Image src={UTIMFLogo} alt="utimf" /></li>
+          <li><a target="_blank" href="https://www.tickertape.in" rel="noreferrer"><Image src={TickertapeLogo} alt="tickertape" /></a></li>
+          <li><a target="_blank" href="https://www.smallcase.com" rel="noreferrer"><Image src={SmallcaseLogo} alt="smallcase" /></a></li>
+          <li><a target="_blank" href="https://www.utimf.com" rel="noreferrer"><Image src={UTIMFLogo} alt="utimf" /></a></li>
         </ul>
       </div>
-
-      <Image 
-        className='hero-image image-cover' 
-        src={HeroImage}
-        alt="Hero Section Image"
-        layout='responsive'
-      />
     </section>
     </>
   )
