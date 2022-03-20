@@ -11,17 +11,49 @@ function Hero() {
     <>
     <style jsx>
       {`
+        section {
+          display: flex;
+          align-items: center;
+          height: 600px;
+        }
+
+        .container {
+          padding: 0 16px;
+        }
+
+        .heading {
+          font-size: var(--text-size-lg);
+          line-height: 130%;
+          font-weight: 700;
+        }
+
+        .heading mark {
+          background-color: #9cb0b93d;
+        }
+        
         .organisation_logos li {
-          @apply mr-16;
+          margin-right: 16px;
+        }
+
+        @media(min-width: 768px){
+          .container {
+            padding: 0px;
+            margin: 0 64px;
+          }
+          .heading {
+            max-width: 80%;
+            line-height: 150%;
+            font-family: var(--font-family-heading);
+          }
         }
       `}
     </style>
-    <section className='py-80 md:flex md:justify-between md:py-[112px] md:px-64 md:mx-auto'>
-      <div className='pb-64 px-16 md:p-0 md:w-3/4'>
-        <h1 className='text-l font-display md:text-xl'>
-        👋 Hi! I am Sandeep Kumar, a freelance Web Developer and mediocre UI Designer based in Bangalore. I help startups & organisations develop  and grow their product. 
+    <section className=''>
+      <div className='container'>
+        <h1 className='heading font_family_bebas'>
+        👋 <mark>Hi! I am Sandeep Kumar, a freelance Web Developer and UI Designer based in Bangalore. I help startups & organisations develop  and grow their product</mark>. 
         </h1>
-        <p className='mt-32 mb-8'>Organisations i have worked with:</p>
+        <p className='mt_32 mb_8'>Organisations i have worked with:</p>
         <ul className='organisation_logos flex'>
           <li><a target="_blank" href="https://www.tickertape.in" rel="noreferrer"><Image src={TickertapeLogo} alt="tickertape" /></a></li>
           <li><a target="_blank" href="https://www.smallcase.com" rel="noreferrer"><Image src={SmallcaseLogo} alt="smallcase" /></a></li>

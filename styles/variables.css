@@ -1,0 +1,23 @@
+:root {
+  /* breakpoints */
+  --md_screen: 769px;
+  --lg_screen: 1025px;
+  --xl_screen: 1441px;
+
+  /* colors */
+  --dark-color: #000000;
+  --light-color: #FFFFFF;
+  --primary-color: #F0F5FF;
+  --secondary-color: #FFFBF0;
+
+  /* font-sizes */
+  --text-size-sm: 0.75rem;
+  --text-size-default: 1rem;
+  --text-size-md: 1.5rem;
+  --text-size-lg: 2rem;
+  --text-size-xl: 3rem;
+
+  /* font family */
+  --font-family-heading: 'Bebas Neue', cursive;
+
+}

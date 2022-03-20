@@ -20,6 +20,7 @@ function Button(props: Props): JSX.Element {
       <style jsx>{`
           .btn-primary {
             @apply bg-dark text-light;
+            box-shadow: 0px 0px 2px 0px grey;
             display: inline-block;
             min-width: '100px';
             width: fit-content;
@@ -28,7 +29,10 @@ function Button(props: Props): JSX.Element {
             @apply text-primary border-solid border-2 border-primary rounded w-full;
           }
           .btn-medium {
-            @apply px-16 py-8;
+            padding: 16px 32px;
+          }
+          .btn-large {
+
           }
       `}</style>
       <Wrapper {...buttonProps}>
